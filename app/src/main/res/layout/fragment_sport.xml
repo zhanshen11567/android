@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 运动目标卡片 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日运动目标"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvTargetDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000 米"
+                android:textSize="24sp"
+                android:textColor="#FF5722"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 今日运动量卡片 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日运动量"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/tvTodayDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 米"
+                    android:textSize="20sp"
+                    android:textColor="#1976D2"/>
+                <TextView
+                    android:id="@+id/tvTodayDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时长: 0分钟"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消耗"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/tvTodayCalories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 千卡"
+                    android:textSize="20sp"
+                    android:textColor="#388E3C"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 运动计划卡片 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动计划"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvPlanName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未选择计划"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 开始运动按钮 -->
+    <Button
+        android:id="@+id/btnStartSport"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="开始运动"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
